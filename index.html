@@ -10,12 +10,11 @@
 	font-family: 'Monoton', cursive;
 	font-family: 'Oswald', sans-serif;
 	font-family: 'Roboto', sans-serif;
-	html, body {height: 100%;}
+	html, body {min-height: 100vh;}
 	body {display:flex; flex-direction: column; margin: 0; background-color:#014af4; color: white;}
-	.heading {margin-bottom: 5%;}
+	.heading {flex: 1 0 auto; min-height: 100vh; padding: 20px;margin-bottom: 5%;}
 	.heading h1 {Font-family: Oswald; font-size: 550%; margin: 0; margin-left: 4%; padding: 0;}
 	.heading p {Font-family: Roboto; font-size: 390%; margin: 0; margin-left:8%; margin-right:8%; padding: 0;}
-	.content {flex: 1 0 auto; padding: 20px;}
 	.footer {flex-shrink: 0; padding: 20px;}
 	footer {background:#0039db; color: white; text-align: center; Font-family: Roboto; font-size: 300%;}
 	</style>
@@ -42,7 +41,7 @@
 				Här kan vi lägga in en berättelse om vår organisation och vad den grundades i för ideer.
 			</p>
 		</div>	
-		<footer>
+		<footer class="footer">
 					<i>Här nere kan vi lägga länkar till facebook/instagram</i>
 		</footer>
 	</body>
